@@ -41,11 +41,13 @@ const Navbar = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 py-4">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-pink-600">
-              Kaushal Gynae & Medical Centre
-            </h1>
+          <img
+              className="h-20 w-auto"
+              src="/logo.png"
+              alt="Medical Clinic Logo"
+            />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
