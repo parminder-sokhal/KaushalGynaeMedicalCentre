@@ -1,12 +1,23 @@
-import { MapPin, Phone, Mail, Clock, Facebook, Youtube, Linkedin, Instagram } from 'lucide-react';
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Youtube,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-          <div className="w-24 h-1 bg-teal-600 mx-auto mb-6"></div>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Get In Touch
+          </h2>
+          <div className="w-24 h-1 bg-pink-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Contact us today to schedule an appointment or for any inquiries
           </p>
@@ -14,55 +25,69 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Contact Information
+            </h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-teal-600 text-white p-3 rounded-lg">
+                <div className="bg-pink-600 text-white p-3 rounded-lg">
                   <MapPin size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Address</h4>
                   <p className="text-gray-600">
-                    SCF 14, Near Sector 20 Panchkula Barrier<br />
-                    Peer Muchalla - 140603<br />
+                    SCF 14, Near Sector 20 Panchkula Barrier
+                    <br />
+                    Peer Muchalla - 140603
+                    <br />
                     Panchkula, Haryana
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-teal-600 text-white p-3 rounded-lg">
+                <div className="bg-pink-600 text-white p-3 rounded-lg">
                   <Phone size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
-                  <a href="tel:9855738386" className="text-gray-600 hover:text-teal-600">
+                  <a
+                    href="tel:9855738386"
+                    className="text-gray-600 hover:text-pink-600"
+                  >
                     +91 9855738386
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-teal-600 text-white p-3 rounded-lg">
+                <div className="bg-pink-600 text-white p-3 rounded-lg">
                   <Mail size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                  <a href="mailto:drkaushalruchita@gmail.com" className="text-gray-600 hover:text-teal-600">
+                  <a
+                    href="mailto:drkaushalruchita@gmail.com"
+                    className="text-gray-600 hover:text-pink-600"
+                  >
                     drkaushalruchita@gmail.com
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-teal-600 text-white p-3 rounded-lg">
+                <div className="bg-pink-600 text-white p-3 rounded-lg">
                   <Clock size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Working Hours</h4>
+                  <h4 className="font-bold text-gray-900 mb-1">
+                    Working Hours
+                  </h4>
                   <p className="text-gray-600">
-                    Mon - Sat: 9:00 AM - 8:00 PM<br />
-                    Sunday: 10:00 AM - 2:00 PM<br />
+                    Mon - Sat: 9:00 AM - 8:00 PM
+                    <br />
+                    Sunday: 10:00 AM - 2:00 PM
+                    <br />
                     24/7 Emergency Services
                   </p>
                 </div>
@@ -74,25 +99,25 @@ const Contact = () => {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="bg-teal-600 text-white p-3 rounded-lg hover:bg-teal-700 transition-colors"
+                  className="bg-pink-600 text-white p-3 rounded-lg hover:bg-pink-700 transition-colors"
                 >
                   <Facebook size={24} />
                 </a>
                 <a
                   href="#"
-                  className="bg-teal-600 text-white p-3 rounded-lg hover:bg-teal-700 transition-colors"
+                  className="bg-pink-600 text-white p-3 rounded-lg hover:bg-pink-700 transition-colors"
                 >
                   <Youtube size={24} />
                 </a>
                 <a
                   href="#"
-                  className="bg-teal-600 text-white p-3 rounded-lg hover:bg-teal-700 transition-colors"
+                  className="bg-pink-600 text-white p-3 rounded-lg hover:bg-pink-700 transition-colors"
                 >
                   <Linkedin size={24} />
                 </a>
                 <a
                   href="#"
-                  className="bg-teal-600 text-white p-3 rounded-lg hover:bg-teal-700 transition-colors"
+                  className="bg-pink-600 text-white p-3 rounded-lg hover:bg-pink-700 transition-colors"
                 >
                   <Instagram size={24} />
                 </a>
@@ -102,50 +127,62 @@ const Contact = () => {
 
           <div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Book an Appointment</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Book an Appointment
+              </h3>
               <form className="space-y-4">
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Full Name</label>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Full Name
+                  </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
                     placeholder="Enter your full name"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
                     placeholder="Enter your phone number"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Email</label>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Email
+                  </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
                     placeholder="Enter your email"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Preferred Date</label>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Preferred Date
+                  </label>
                   <input
                     type="date"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Message</label>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Message
+                  </label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
                     placeholder="Tell us about your concerns or questions"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-teal-600 text-white py-4 rounded-lg font-semibold hover:bg-teal-700 transition-colors shadow-lg"
+                  className="w-full bg-pink-600 text-white py-4 rounded-lg font-semibold hover:bg-pink-700 transition-colors shadow-lg"
                 >
                   Book Appointment
                 </button>
