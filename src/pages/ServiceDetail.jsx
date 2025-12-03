@@ -50,12 +50,12 @@ const ServiceDetail = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-96 object-cover rounded-2xl shadow-lg"
+              className="w-full h-96 object-cover rounded-2xl"
             />
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-md p-8 lg:p-12">
+        <div className="p-8 lg:p-12">
           <div className="prose prose-lg max-w-none">
             {item.content.split('\n').map((paragraph, index) => {
               const trimmed = paragraph.trim();

@@ -9,12 +9,12 @@ const Navbar = () => {
   const [treatmentsDropdown, setTreatmentsDropdown] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Our Doctors", href: "#doctors" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#home" },
+    { name: "About Us", href: "/#about" },
+    { name: "Our Doctors", href: "/#doctors" },
+    { name: "Gallery", href: "/#gallery" },
+    { name: "Testimonials", href: "/#testimonials" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
