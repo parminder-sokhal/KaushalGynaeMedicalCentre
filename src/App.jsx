@@ -8,6 +8,7 @@ import {
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 /* --- Services Pages --- */
 import AntenatalCare from "./pages/services/AntenatalCare";
@@ -21,6 +22,7 @@ import HighRiskPregnancy from "./pages/treatements/HighRiskPregnancy";
 import FamilyPlanning from "./pages/treatements/FamilyPlanning";
 import MenopauseHealth from "./pages/treatements/MenopauseHealth";
 import PostnatalCare from "./pages/treatements/PostnatalCare";
+import AboutUs from "./pages/AboutUs";
 
 function AppContent() {
   const location = useLocation();
@@ -30,6 +32,7 @@ function AppContent() {
       <Navbar />
 
       <div className="flex-grow">
+        <ScrollToTop />
         <Routes>
           {/* --- Home --- */}
           <Route
@@ -40,20 +43,22 @@ function AppContent() {
               </>
             }
           />
+          <Route
+            path="/about"
+            element={
+              <>
+                <AboutUs />
+              </>
+            }
+          />
 
           {/* --- Services --- */}
-          <Route
-            path="/services/antenatal-care"
-            element={<AntenatalCare />}
-          />
+          <Route path="/services/antenatal-care" element={<AntenatalCare />} />
           <Route
             path="/services/normal-delivery"
             element={<NormalDelivery />}
           />
-          <Route
-            path="/services/gynae-surgical"
-            element={<GynaeSurgical />}
-          />
+          <Route path="/services/gynae-surgical" element={<GynaeSurgical />} />
           <Route
             path="/services/infertility-iui"
             element={<InfertilityIUI />}

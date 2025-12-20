@@ -5,6 +5,7 @@ import Doctors from '../components/Doctors';
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
+import HospitalStructure from '../components/HospitalStructure';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <About />
       <Services />
+      <HospitalStructure />
       <Doctors />
       <Gallery />
       <Testimonials />

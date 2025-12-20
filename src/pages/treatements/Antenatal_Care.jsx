@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-const HighRiskPregnancy = () => {
+const Antenatal_Care = () => {
   return (
     <div className="w-full bg-white font-sans">
       {/* HERO SECTION */}
       <section className="relative">
         <img
-          src="/high-risk-pregnancy.jpeg"
-          alt="High-Risk Pregnancy Care"
+          src="/antenatal-care.jpeg"
+          alt="Antenatal Care & Pregnancy Checkups"
           className="w-full h-[70vh] object-cover mt-28"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
@@ -15,13 +15,16 @@ const HighRiskPregnancy = () => {
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-6 lg:px-40 text-white">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              High-Risk Pregnancy
-              <span className="block text-pink-400">Expert Care & Safety</span>
+              Antenatal Care
+              <span className="block text-pink-400">
+                Healthy Pregnancy, Healthy Baby
+              </span>
             </h1>
 
             <p className="max-w-2xl text-lg sm:text-xl text-gray-200 mb-8">
-              Specialized monitoring, advanced diagnostics, and compassionate
-              medical support for mothers who need extra care during pregnancy.
+              Comprehensive pregnancy checkups, early screening, and expert
+              guidance to ensure the best possible care for both mother and baby
+              throughout every trimester.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -48,32 +51,32 @@ const HighRiskPregnancy = () => {
         {/* INTRO */}
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            What Is a High-Risk Pregnancy?
+            What Is Antenatal Care?
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-            A pregnancy is considered high-risk when there is an increased chance
-            of complications affecting the mother, baby, or both. These cases
-            require closer monitoring, expert supervision, and personalized
-            treatment plans.
+            Antenatal care refers to regular medical checkups and monitoring
+            during pregnancy to ensure the health and well-being of both mother
+            and baby. Early detection, timely intervention, and expert guidance
+            help prevent complications and promote a smooth pregnancy journey.
           </p>
         </div>
 
-        {/* CONDITIONS GRID */}
+        {/* SERVICES GRID */}
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-8">
-            Conditions We Manage
+            Antenatal Services We Offer
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Gestational Diabetes",
-              "Pregnancy-Induced Hypertension & Preeclampsia",
-              "Thyroid Disorders",
-              "Previous Miscarriages / Preterm Birth",
-              "Multiple Pregnancy (Twins / Triplets)",
-              "Fetal Growth Restriction (IUGR)",
-              "Maternal Age Above 35",
-              "Placenta-Related Issues",
+              "Routine Pregnancy Checkups",
+              "Ultrasound & Growth Scans",
+              "Blood & Urine Investigations",
+              "Blood Pressure & Weight Monitoring",
+              "Fetal Heart Rate Monitoring",
+              "Screening for Gestational Diabetes",
+              "Anemia & Thyroid Screening",
+              "Vaccinations During Pregnancy",
             ].map((item, i) => (
               <div
                 key={i}
@@ -83,8 +86,8 @@ const HighRiskPregnancy = () => {
                   {item}
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
-                  Specialized monitoring, timely interventions, and
-                  evidence-based treatment for safer pregnancy outcomes.
+                  Regular monitoring and evidence-based care to support a safe
+                  and healthy pregnancy.
                 </p>
               </div>
             ))}
@@ -94,18 +97,18 @@ const HighRiskPregnancy = () => {
         {/* CARE HIGHLIGHTS */}
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-8">
-            Our High-Risk Pregnancy Care Includes
+            Our Antenatal Care Includes
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Frequent antenatal visits & monitoring",
-              "Advanced ultrasound & Doppler scans",
-              "Personalized treatment plans",
-              "Nutrition & lifestyle counselling",
-              "Safe medication management",
-              "Planned labour & delivery strategy",
-              "24/7 emergency medical support",
+              "Scheduled antenatal visits across all trimesters",
+              "Early detection of pregnancy-related risks",
+              "Personalized nutrition & supplement guidance",
+              "Monitoring maternal & fetal health",
+              "Timely vaccinations and screenings",
+              "Lifestyle & exercise counselling",
+              "Emergency support when needed",
             ].map((point, i) => (
               <div
                 key={i}
@@ -121,14 +124,14 @@ const HighRiskPregnancy = () => {
         {/* WHY CHOOSE US */}
         <div className="bg-gradient-to-br from-pink-50 to-white p-10 rounded-3xl shadow">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Why Choose Us?
+            Why Choose Us for Antenatal Care?
           </h2>
           <ul className="grid sm:grid-cols-2 gap-4 text-gray-700">
             <li>✔ Experienced obstetricians & gynecologists</li>
-            <li>✔ Advanced monitoring technology</li>
-            <li>✔ Comprehensive neonatal support</li>
-            <li>✔ Personalized & compassionate care</li>
-            <li>✔ Safe and comfortable birthing experience</li>
+            <li>✔ Modern diagnostic & ultrasound facilities</li>
+            <li>✔ Personalized pregnancy care plans</li>
+            <li>✔ Compassionate & supportive approach</li>
+            <li>✔ Continuous monitoring for mother & baby</li>
           </ul>
         </div>
 
@@ -138,10 +141,10 @@ const HighRiskPregnancy = () => {
             Summary
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-            High-Risk Pregnancy Management focuses on protecting the health of
-            both mother and baby. With expert supervision, advanced diagnostics,
-            and continuous support, we ensure a safe and confident pregnancy
-            journey.
+            Antenatal care plays a crucial role in ensuring a healthy pregnancy
+            and safe delivery. Through regular checkups, expert supervision, and
+            compassionate care, we support mothers at every stage of their
+            pregnancy journey.
           </p>
         </div>
       </section>
@@ -149,4 +152,4 @@ const HighRiskPregnancy = () => {
   );
 };
 
-export default HighRiskPregnancy;
+export default Antenatal_Care;

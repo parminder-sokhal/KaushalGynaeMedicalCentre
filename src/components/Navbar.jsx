@@ -2,17 +2,17 @@ import { useState } from "react";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { servicesData, treatmentData } from "../data/servicesAndTreatments";
+import { FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const navLinks = [
-    { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Gallery", href: "/gallery" },
-    { name: "Testimonials", href: "/testimonials" },
-    { name: "Contact", href: "/contact" },
+    { name: "Blog", href: "/blog" },
   ];
 
   const toggleDropdown = (name) => {
@@ -24,18 +24,55 @@ const Navbar = () => {
       {/* Top Contact Bar */}
       <div className="bg-pink-600 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
+          {/* LEFT */}
           <div className="flex items-center gap-6">
-            <a href="tel:9855738386" className="flex items-center gap-2 hover:text-pink-200">
+            <a
+              href="tel:9855738386"
+              className="flex items-center gap-2 hover:text-pink-200"
+            >
               <Phone size={16} />
-              <span>9855738386</span>
+              <span className="hidden lg:inline">9855738386</span>
             </a>
-            <a href="mailto:drkaushalruchita@gmail.com" className="flex items-center gap-2 hover:text-pink-200">
+
+            <a
+              href="mailto:drkaushalruchita@gmail.com"
+              className="flex items-center gap-2 hover:text-pink-200"
+            >
               <Mail size={16} />
-              <span>drkaushalruchita@gmail.com</span>
+              <span className="hidden lg:inline">
+                drkaushalruchita@gmail.com
+              </span>
             </a>
+            <Link
+              to="https://maps.app.goo.gl/AR1WvaZ6PNzR9Fos7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 hover:text-black"
+            >
+              <FaMapMarkerAlt size={16} />
+              <span className="hidden lg:inline">Sector 20, Panchkula, Haryana 134117</span>
+            </Link>
           </div>
-          <div className="hidden md:flex items-center gap-4">
-            <span>24/7 Emergency Service Available</span>
+
+          {/* RIGHT */}
+          <div className="flex items-center gap-4">
+            <span className="hidden lg:inline">
+              24/7 Emergency Service Available
+            </span>
+
+            {/* SOCIAL MEDIA */}
+            <Link to="https://www.youtube.com/" target="_blank">
+              <FaYoutube className="text-xl hover:text-red-500" />
+            </Link>
+            <Link to="https://www.facebook.com/" target="_blank">
+              <FaFacebook className="text-xl hover:text-blue-500" />
+            </Link>
+            <Link
+              to="https://www.instagram.com/"
+              target="_blank"
+            >
+              <FaInstagram className="text-xl hover:text-pink-400" />
+            </Link>
           </div>
         </div>
       </div>
@@ -43,9 +80,12 @@ const Navbar = () => {
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 py-4">
+          <div className="flex items-center space-x-4">
           <Link to="/" className="flex-shrink-0">
             <img src="/logo.png" alt="Clinic Logo" className="h-16 w-auto" />
           </Link>
+          <span className="font-bold lg:text-2xl text-md text-pink-600">Kaushal Gynae Medical Care</span>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -53,24 +93,23 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-gray-700 hover:text-pink-600 font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-pink-600 font-medium"
               >
                 {link.name}
               </Link>
             ))}
 
-            {/* Services Dropdown */}
+            {/* Services */}
             <div className="relative group">
               <button className="flex items-center gap-1 text-gray-700 hover:text-pink-600 font-medium">
-                Services
-                <ChevronDown size={18} />
+                Services <ChevronDown size={18} />
               </button>
-              <div className="absolute left-0 mt-1 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-1 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all">
                 {servicesData.map((service) => (
                   <Link
                     key={service.id}
                     to={`/services/${service.id}`}
-                    className="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors"
+                    className="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600"
                   >
                     {service.title}
                   </Link>
@@ -78,18 +117,17 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Treatments Dropdown */}
+            {/* Treatments */}
             <div className="relative group">
               <button className="flex items-center gap-1 text-gray-700 hover:text-pink-600 font-medium">
-                Treatments
-                <ChevronDown size={18} />
+                Treatments <ChevronDown size={18} />
               </button>
-              <div className="absolute left-0 mt-1 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-1 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all">
                 {treatmentData.map((treatment) => (
                   <Link
                     key={treatment.id}
                     to={`/treatments/${treatment.id}`}
-                    className="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors"
+                    className="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600"
                   >
                     {treatment.title}
                   </Link>
@@ -97,19 +135,18 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Remaining Links */}
             {navLinks.slice(2).map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-gray-700 hover:text-pink-600 font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-pink-600 font-medium"
               >
                 {link.name}
               </Link>
             ))}
           </div>
 
-          {/* Mobile Hamburger */}
+          {/* Hamburger */}
           <button
             className="md:hidden text-gray-700 hover:text-pink-600"
             onClick={() => setIsOpen(!isOpen)}
@@ -123,80 +160,11 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white border-t shadow-md max-h-[80vh] overflow-y-auto">
           <div className="px-4 pt-3 pb-6 space-y-2">
-            {/* Home and About First */}
-            {navLinks.slice(0, 2).map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="block px-3 py-2 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-md font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
-
-            {/* Services Accordion */}
-            <div>
-              <button
-                onClick={() => toggleDropdown("services")}
-                className="w-full flex justify-between items-center px-3 py-2 text-gray-700 hover:bg-pink-50 rounded-md font-medium"
-              >
-                Services
-                <ChevronDown
-                  size={18}
-                  className={`transition-transform ${openDropdown === "services" ? "rotate-180" : ""}`}
-                />
-              </button>
-              {openDropdown === "services" && (
-                <div className="pl-4 mt-2 space-y-1">
-                  {servicesData.map((service) => (
-                    <Link
-                      key={service.id}
-                      to={`/services/${service.id}`}
-                      className="block px-3 py-2 text-gray-600 hover:text-pink-600 hover:bg-pink-50 rounded-md text-sm"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {service.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Treatments Accordion */}
-            <div>
-              <button
-                onClick={() => toggleDropdown("treatments")}
-                className="w-full flex justify-between items-center px-3 py-2 text-gray-700 hover:bg-pink-50 rounded-md font-medium"
-              >
-                Treatments
-                <ChevronDown
-                  size={18}
-                  className={`transition-transform ${openDropdown === "treatments" ? "rotate-180" : ""}`}
-                />
-              </button>
-              {openDropdown === "treatments" && (
-                <div className="pl-4 mt-2 space-y-1">
-                  {treatmentData.map((treatment) => (
-                    <Link
-                      key={treatment.id}
-                      to={`/treatments/${treatment.id}`}
-                      className="block px-3 py-2 text-gray-600 hover:text-pink-600 hover:bg-pink-50 rounded-md text-sm"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {treatment.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Remaining Links */}
-            {navLinks.slice(2).map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="block px-3 py-2 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-md font-medium"
+                className="block px-3 py-2 text-gray-700 hover:bg-pink-50 rounded-md font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
