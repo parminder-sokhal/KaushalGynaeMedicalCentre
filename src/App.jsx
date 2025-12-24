@@ -18,10 +18,18 @@ import InfertilityIUI from "./pages/services/InfertilityIUI";
 import Ultrasonography from "./pages/services/Ultrasonography";
 
 /* --- Treatment Pages --- */
-import HighRiskPregnancy from "./pages/treatements/HighRiskPregnancy";
-import FamilyPlanning from "./pages/treatements/FamilyPlanning";
-import MenopauseHealth from "./pages/treatements/MenopauseHealth";
-import PostnatalCare from "./pages/treatements/PostnatalCare";
+import HelpsManageHormonalAndEmotionalChanges from "./pages/treatements/HelpsManageHormonalAndEmotionalChanges";
+import AntenatalCareAndCheckups from "./pages/treatements/AntenatalCareAndCheckups";
+import MenopauseAndWomensHealthSupport from "./pages/treatements/MenopauseAndWomensHealthSupport";
+import FamilyPlanningAndContraceptiveServices from "./pages/treatements/FamilyPlanningAndContraceptiveServices";
+import HighRiskPregnancyManagement from "./pages/treatements/HighRiskPregnancyManagement";
+import UltrasonographyAndImagingServices from "./pages/treatements/UltrasonographyAndImagingServices";
+import GynaeSurgicalProcedures from "./pages/treatements/GynaeSurgicalProcedures";
+import InfertilityServicesAndIUI from "./pages/treatements/InfertilityServicesAndIUI";
+import NormalVaginalDeliveryAndCSection from "./pages/treatements/NormalVaginalDeliveryAndCSection";
+
+
+
 import AboutUs from "./pages/AboutUs";
 
 function AppContent() {
@@ -69,23 +77,44 @@ function AppContent() {
           />
 
           {/* --- Treatments --- */}
-          <Route
-            path="/treatments/high-risk-pregnancy"
-            element={<HighRiskPregnancy />}
+         <Route
+            path="/treatments/helps-manage-hormonal-and-emotional-changes"
+            element={<HelpsManageHormonalAndEmotionalChanges />}
           />
-          <Route
-            path="/treatments/family-planning"
-            element={<FamilyPlanning />}
+         <Route
+            path="/treatments/antenatal-care-and-checkups"
+            element={<AntenatalCareAndCheckups />}
           />
-          <Route
-            path="/treatments/menopause-health"
-            element={<MenopauseHealth />}
+         <Route
+            path="/treatments/menopause-and-womens-health-support"
+            element={<MenopauseAndWomensHealthSupport />}
           />
-          <Route
-            path="/treatments/postnatal-care"
-            element={<PostnatalCare />}
+         <Route
+            path="/treatments/family-planning-and-contraceptive-services"
+            element={<FamilyPlanningAndContraceptiveServices />}
           />
-        </Routes>
+         <Route
+            path="/treatments/high-risk-pregnancy-management"
+            element={<HighRiskPregnancyManagement />}
+          />
+         <Route
+            path="/treatments/ultrasonography-and-imaging-services"
+            element={<UltrasonographyAndImagingServices />}
+          />
+         <Route
+            path="/treatments/gynae-surgical-procedures"
+            element={<GynaeSurgicalProcedures />}
+          />
+         <Route
+            path="/treatments/infertility-services-and-iui"
+            element={<InfertilityServicesAndIUI />}
+          />
+         <Route
+            path="/treatments/normal-vaginal-delivery-and-c-section"
+            element={<NormalVaginalDeliveryAndCSection />}
+          />
+        </Routes>        
+
       </div>
 
       <Footer />

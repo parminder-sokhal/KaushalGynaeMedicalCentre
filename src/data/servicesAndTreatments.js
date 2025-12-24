@@ -25,19 +25,40 @@ export const servicesData = [
 
 export const treatmentData = [
   {
-    id: "high-risk-pregnancy",
+    id: "helps-manage-hormonal-and-emotional-changes",
+    title: "Helps Manage Hormonal and Emotional Changes",
+  },
+  {
+    id: "antenatal-care-and-checkups",
+    title: "antenatal Care and Check-ups",
+  },
+  {
+    id: "menopause-and-womens-health-support",
+    title: "Menopause and women's Health Support",
+  },
+  {
+    id: "family-planning-and-contraceptive-services",
+    title: "Family Planning and Contraceptive Services",
+  },
+  {
+    id: "high-risk-pregnancy-management",
     title: "High-Risk Pregnancy Management",
   },
   {
-    id: "family-planning",
-    title: "Family Planning & Contraceptive Services",
+    id: "ultrasonography-and-imaging-services",
+    title: "Ultrasonography and Imaging Services",
   },
   {
-    id: "menopause-health",
-    title: "Menopause & Women’s Health Support",
+    id: "gynae-surgical-procedures",
+    title: "Gynae-Surgical Procedures",
   },
   {
-    id: "postnatal-care",
-    title: "Post-natal Care & Lactation Counselling",
+    id: "infertility-services-and-iui",
+    title: "Infertility Services and IUI",
   },
+  {
+    id: "normal-vaginal-delivery-and-c-section",
+    title: "Normal Vaginal Delivery and C-Section",
+  },
+  
 ];
