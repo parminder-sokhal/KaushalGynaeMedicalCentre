@@ -9,6 +9,12 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import SignIn from "./pages/SignIn";
+import Dashboard from "./pages/dashboard/Dashboard";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import WelcomeDashboard from "./pages/dashboard/WelcomeDashboard";
+import AddBlogs from "./components/dashboard/blogs/AddBlogs";
+import AddLinks from "./components/dashboard/Links/AddLinks";
 
 /* --- Services Pages --- */
 import AntenatalCare from "./pages/services/AntenatalCare";
@@ -27,39 +33,36 @@ import UltrasonographyAndImagingServices from "./pages/treatements/Ultrasonograp
 import GynaeSurgicalProcedures from "./pages/treatements/GynaeSurgicalProcedures";
 import InfertilityServicesAndIUI from "./pages/treatements/InfertilityServicesAndIUI";
 import NormalVaginalDeliveryAndCSection from "./pages/treatements/NormalVaginalDeliveryAndCSection";
-
-
-
 import AboutUs from "./pages/AboutUs";
 
 function AppContent() {
   const location = useLocation();
 
+  // check if current route is dashboard
+  const isDashboardRoute = location.pathname.startsWith("/dashboard");
+
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      {/* ✅ Hide Navbar on dashboard */}
+      {!isDashboardRoute && <Navbar />}
 
       <div className="flex-grow">
         <ScrollToTop />
-        <Routes>
-          {/* --- Home --- */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Home />
-              </>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <>
-                <AboutUs />
-              </>
-            }
-          />
 
+        <Routes>
+          {/* --- Public Routes --- */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/signin" element={<SignIn />} />
+          {/* --- Private Dashboard Routes --- */}
+          <Route element={<PrivateRoute />}>
+            <Route path="/dashboard" element={<Dashboard />}>
+              <Route index element={<WelcomeDashboard />} />
+              <Route path="Blogs" element={<AddBlogs />} />
+              <Route path="Links" element={<AddLinks />} />
+            </Route>
+          </Route>
+          {/* --- Services & Treatments --- */}
           {/* --- Services --- */}
           <Route path="/services/antenatal-care" element={<AntenatalCare />} />
           <Route
@@ -75,49 +78,48 @@ function AppContent() {
             path="/services/ultrasonography"
             element={<Ultrasonography />}
           />
-
           {/* --- Treatments --- */}
-         <Route
+          <Route
             path="/treatments/helps-manage-hormonal-and-emotional-changes"
             element={<HelpsManageHormonalAndEmotionalChanges />}
           />
-         <Route
+          <Route
             path="/treatments/antenatal-care-and-checkups"
             element={<AntenatalCareAndCheckups />}
           />
-         <Route
+          <Route
             path="/treatments/menopause-and-womens-health-support"
             element={<MenopauseAndWomensHealthSupport />}
           />
-         <Route
+          <Route
             path="/treatments/family-planning-and-contraceptive-services"
             element={<FamilyPlanningAndContraceptiveServices />}
           />
-         <Route
+          <Route
             path="/treatments/high-risk-pregnancy-management"
             element={<HighRiskPregnancyManagement />}
           />
-         <Route
+          <Route
             path="/treatments/ultrasonography-and-imaging-services"
             element={<UltrasonographyAndImagingServices />}
           />
-         <Route
+          <Route
             path="/treatments/gynae-surgical-procedures"
             element={<GynaeSurgicalProcedures />}
           />
-         <Route
+          <Route
             path="/treatments/infertility-services-and-iui"
             element={<InfertilityServicesAndIUI />}
           />
-         <Route
+          <Route
             path="/treatments/normal-vaginal-delivery-and-c-section"
             element={<NormalVaginalDeliveryAndCSection />}
-          />
-        </Routes>        
-
+          />{" "}
+        </Routes>
       </div>
 
-      <Footer />
+      {/* ✅ Hide Footer on dashboard */}
+      {!isDashboardRoute && <Footer />}
     </div>
   );
 }
