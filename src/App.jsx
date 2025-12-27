@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import SignIn from "./pages/SignIn";
 import Dashboard from "./pages/dashboard/DashboardPage";
-import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import PrivateRoute from "./components/privateRoute/PrivateR";
 import WelcomeDashboard from "./pages/dashboard/WelcomeDashboard";
 import AddBlogs from "./components/dashboard/blogs/AddBlogs";
 import AddLinks from "./components/dashboard/Links/AddLinks";
