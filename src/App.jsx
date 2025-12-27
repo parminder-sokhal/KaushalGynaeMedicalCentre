@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import SignIn from "./pages/SignIn";
-import Dashboard from "./pages/dashboard/Dashboard";
+import Dashboard from "./pages/dashboard/DashboardPage";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import WelcomeDashboard from "./pages/dashboard/WelcomeDashboard";
 import AddBlogs from "./components/dashboard/blogs/AddBlogs";
