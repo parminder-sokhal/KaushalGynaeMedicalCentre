@@ -5,3 +5,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+/* Prevent Quill / pasted HTML from breaking layout */
+.prose * {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose table {
+  display: block;
+  overflow-x: auto;
+}

@@ -27,11 +27,11 @@ const Navbar = () => {
           {/* LEFT */}
           <div className="flex items-center gap-6">
             <a
-              href="tel:9855738386"
+              href="tel:9316194659"
               className="flex items-center gap-2 hover:text-pink-200"
             >
               <Phone size={16} />
-              <span className="hidden lg:inline">9855738386</span>
+              <span className="hidden lg:inline">9316194659</span>
             </a>
 
             <a
@@ -44,13 +44,15 @@ const Navbar = () => {
               </span>
             </a>
             <Link
-              to="https://maps.app.goo.gl/AR1WvaZ6PNzR9Fos7"
+              to="https://maps.app.goo.gl/y3cSrrQUfeyhQbRk8"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-black"
             >
               <FaMapMarkerAlt size={16} />
-              <span className="hidden lg:inline">Sector 20, Panchkula, Haryana 134117</span>
+              <span className="hidden lg:inline">
+                Sector 20, Panchkula, Haryana 134117
+              </span>
             </Link>
           </div>
 
@@ -67,10 +69,7 @@ const Navbar = () => {
             <Link to="https://www.facebook.com/" target="_blank">
               <FaFacebook className="text-xl hover:text-blue-500" />
             </Link>
-            <Link
-              to="https://www.instagram.com/"
-              target="_blank"
-            >
+            <Link to="https://www.instagram.com/" target="_blank">
               <FaInstagram className="text-xl hover:text-pink-400" />
             </Link>
           </div>
@@ -81,10 +80,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 py-4">
           <div className="flex items-center space-x-4">
-          <Link to="/" className="flex-shrink-0">
-            <img src="/logo.png" alt="Clinic Logo" className="h-16 w-auto" />
-          </Link>
-          <span className="font-bold lg:text-2xl text-md text-pink-600">Kaushal Gynae Medical Care</span>
+            <Link to="/" className="flex-shrink-0">
+              <img src="/logo.png" alt="Clinic Logo" className="h-16 w-auto" />
+            </Link>
+            <span className="font-bold lg:text-2xl text-md text-pink-600">
+              Kaushal Gynae Medical Care
+            </span>
           </div>
 
           {/* Desktop Navigation */}

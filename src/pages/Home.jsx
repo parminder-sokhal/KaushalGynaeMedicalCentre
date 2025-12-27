@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import HospitalStructure from '../components/HospitalStructure';
+import HomeSocialMedia from '../components/HomeSocialMedia';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Doctors />
       <Gallery />
       <Testimonials />
+      <HomeSocialMedia />
       <Contact />
     </>
   );

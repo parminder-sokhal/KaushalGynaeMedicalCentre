@@ -1,4 +1,6 @@
 import { Heart, Phone, Mail, MapPin } from "lucide-react";
+import { href } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -87,10 +89,10 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <Phone size={20} />
                 <a
-                  href="tel:9855738386"
+                  href="tel:9316194659"
                   className="text-gray-400 hover:text-pink-400 transition-colors"
                 >
-                  +91 9855738386
+                  +91 9316194659
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -108,7 +110,11 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Kaushal Gynae & Medical Centre.
+            &copy; {new Date().getFullYear()} &nbsp;
+             <Link to="/dashboard">
+              Kaushal Gynae & Medical Centre.
+            </Link>
+            &nbsp;
             All rights reserved.
           </p>
           <p className="text-gray-500 mt-2 text-sm">

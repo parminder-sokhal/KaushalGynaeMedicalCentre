@@ -16,6 +16,9 @@ import WelcomeDashboard from "./pages/dashboard/WelcomeDashboard";
 import AddBlogs from "./components/dashboard/blogs/AddBlogs";
 import AddLinks from "./components/dashboard/Links/AddLinks";
 
+import Blogs from "./pages/blogs/Blogs";
+import SingleBlog from "./pages/blogs/SingleBlog";
+
 /* --- Services Pages --- */
 import AntenatalCare from "./pages/services/AntenatalCare";
 import NormalDelivery from "./pages/services/NormalDelivery";
@@ -54,6 +57,8 @@ function AppContent() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/blog/:id" element={<SingleBlog />} />
           {/* --- Private Dashboard Routes --- */}
           <Route element={<PrivateRoute />}>
             <Route path="/dashboard" element={<Dashboard />}>
@@ -115,6 +120,10 @@ function AppContent() {
             path="/treatments/normal-vaginal-delivery-and-c-section"
             element={<NormalVaginalDeliveryAndCSection />}
           />{" "}
+          <Route
+            path="*"
+            element={<h1 className="text-center mt-20">404 Not Found</h1>}
+          />
         </Routes>
       </div>
 

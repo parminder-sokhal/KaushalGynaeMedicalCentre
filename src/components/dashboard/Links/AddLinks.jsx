@@ -58,6 +58,29 @@ function AddLinks() {
         </button>
       </div>
 
+      <div className="mb-6 bg-pink-50 border border-pink-200 rounded-lg p-4 text-sm text-gray-700">
+        <p className="font-semibold text-pink-700 mb-1">
+          ℹ️ YouTube Link Format
+        </p>
+
+        <p className="mb-2">
+          There are many types of YouTube links available, but we accept
+          <b> only the embed format</b>.
+        </p>
+
+        <p className="text-gray-600 mb-2">Please use the following format:</p>
+
+        <code className="block bg-white border border-pink-200 rounded px-3 py-2 text-sm text-pink-700">
+          https://www.youtube.com/embed/&lt;YOUR_VIDEO_ID&gt;
+        </code>
+
+        <p className="mt-2 text-gray-600">Example:</p>
+
+        <code className="block bg-white border border-pink-200 rounded px-3 py-2 text-sm text-gray-700">
+          https://www.youtube.com/embed/c6F_rW-u6cY
+        </code>
+      </div>
+
       <div className="mb-6 w-full md:w-1/3 relative">
         <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
         <input
