@@ -31,11 +31,7 @@ export default function Dashboard() {
         <nav className="h-full flex flex-col">
           {/* Logo and Close Icon */}
           <div className="p-4 flex items-center justify-between border-b">
-            <img
-              className="w-20 h-auto"
-              src="/logo.png"
-              alt="logo"
-            />
+            <img className="w-20 h-auto" src="/logo.png" alt="logo" />
             <button className="sm:hidden text-xl" onClick={closeSidebar}>
               <FaTimes />
             </button>
@@ -73,14 +69,14 @@ export default function Dashboard() {
               onClick={closeSidebar}
               active={location.pathname === "/dashboard/Links"}
             />
-            
+
             <li className="py-4 border-t">
               <button
                 onClick={() => {
                   dispatch(logout());
                   navigate("/");
                 }}
-                className={`flex w-full items-center p-2 rounded-md text-sm font-medium transition-colors text-black hover:text-white hover:bg-pink-600`}
+                className={`flex w-full items-center p-2 rounded-md text-sm font-medium transition-colors text-black hover:text-white hover:bg-pink-500`}
               >
                 <FaChalkboardTeacher />
                 <span className="ml-3">Logout</span>

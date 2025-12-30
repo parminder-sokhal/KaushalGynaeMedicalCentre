@@ -82,8 +82,8 @@ const Footer = () => {
               <li className="flex items-start gap-2 text-gray-400">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />
                 <span>
-                  SCF 14, Near Sector 20 Panchkula Barrier, Peer Muchalla -
-                  140603
+                  SCF 14 , PEERMUCHALA, PEER MUCHALLA, ZIRAKPUR, Punjab 
+                  160104
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -111,11 +111,8 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
             &copy; {new Date().getFullYear()} &nbsp;
-             <Link to="/dashboard">
-              Kaushal Gynae & Medical Centre.
-            </Link>
-            &nbsp;
-            All rights reserved.
+            <Link to="/dashboard">Kaushal Gynae & Medical Centre.</Link>
+            &nbsp; All rights reserved.
           </p>
           <p className="text-gray-500 mt-2 text-sm">
             Designed with care for your health and wellness

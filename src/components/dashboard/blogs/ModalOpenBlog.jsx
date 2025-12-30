@@ -146,7 +146,7 @@ function ModalOpenBlog({ open, onClose, blog, isEditing }) {
 
             <button
               type="submit"
-              className="px-4 py-2 bg-pink-600 text-white rounded"
+              className="px-4 py-2 bg-pink-500 text-white rounded"
             >
               {isEditing ? "Update Blog" : "Create Blog"}
             </button>

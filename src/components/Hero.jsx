@@ -15,8 +15,8 @@ const Hero = () => {
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
-              World-Class Clinical Care  
-              <span className="block text-pink-600">
+              World-Class Clinical Care
+              <span className="block text-pink-500">
                 Powered by Advanced Technology
               </span>
             </h1>
@@ -30,14 +30,14 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-pink-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-pink-700 transition shadow-lg"
+                className="inline-flex items-center justify-center gap-2 bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-pink-600 transition shadow-lg"
               >
                 Book Appointment
                 <ArrowRight size={20} />
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center bg-white text-pink-600 px-8 py-4 rounded-xl font-semibold border-2 border-pink-600 hover:bg-pink-50 transition shadow"
+                className="inline-flex items-center justify-center bg-white text-pink-500 px-8 py-4 rounded-xl font-semibold border-2 border-pink-500 hover:bg-pink-50 transition shadow"
               >
                 Our Services
               </a>
@@ -50,11 +50,8 @@ const Hero = () => {
                 { icon: Heart, label: "Compassionate Care" },
                 { icon: Award, label: "Award Winning" },
               ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center text-center"
-                >
-                  <div className="bg-pink-600 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                <div key={i} className="flex flex-col items-center text-center">
+                  <div className="bg-pink-500 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-3 shadow-lg">
                     <item.icon size={28} />
                   </div>
                   <p className="text-sm font-semibold text-gray-700">
@@ -78,7 +75,7 @@ const Hero = () => {
 
             {/* EXPERIENCE CARD */}
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 lg:left-6 lg:translate-x-0 bg-white px-6 py-4 rounded-2xl shadow-xl text-center">
-              <p className="text-4xl font-bold text-pink-600">12+</p>
+              <p className="text-4xl font-bold text-pink-500">12+</p>
               <p className="text-gray-600 font-semibold text-sm">
                 Years of Excellence
               </p>

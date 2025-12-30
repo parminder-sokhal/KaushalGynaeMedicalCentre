@@ -29,14 +29,14 @@ const GynaeSurgicalProcedures = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="bg-pink-600 hover:bg-pink-700 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Book Consultation
               </Link>
 
               <Link
                 to="/treatments"
-                className="bg-white/90 text-pink-600 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-white/90 text-pink-500 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Other Treatments
               </Link>
@@ -218,7 +218,7 @@ const GynaeSurgicalProcedures = () => {
           <h3 className="text-xl font-bold text-gray-800 mb-4">
             Other Treatments
           </h3>
-         <ul className="space-y-3 text-pink-600 font-medium">
+          <ul className="space-y-3 text-pink-500 font-medium">
             {treatmentData.map((item) => (
               <li key={item.id}>
                 <Link to={`/treatments/${item.id}`}>› {item.title}</Link>

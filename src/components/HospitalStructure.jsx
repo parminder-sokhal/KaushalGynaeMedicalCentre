@@ -10,14 +10,14 @@ const HospitalStructure = () => {
       </div>
       <div className='flex flex-col sm:flex-row md:flex-row lg:flex-row gap-4 items-top justify-between'>
       {/* Box 1 */}
-      <div className="flex-1 bg-gray-200 rounded-md p-4 mx-2 text-center justify-center shadow-sm">
+      {/* <div className="flex-1 bg-gray-200 rounded-md p-4 mx-2 text-center justify-center shadow-sm">
         <h3 className="font-bold text-xl text-gray-800 mb-2">NABH ACCREDITED HOSPITAL</h3>
-      </div>
+      </div> */}
 
       {/* Box 2 */}
       <div className="flex-1 bg-pink-100 rounded-md p-4 mx-2 text-center shadow-sm flex items-center justify-center">
         <div>
-        <h3 className="font-bold text-xl text-gray-800 mb-2">40</h3>
+        <h3 className="font-bold text-xl text-gray-800 mb-2">20</h3>
         <h3 className="font-bold text-xl text-gray-800 mb-2">Hospital Beds</h3>
         {/* <p className="text-gray-600 font-bold">Hospital Beds</p> */}
         </div>
@@ -38,7 +38,7 @@ const HospitalStructure = () => {
       <div className="flex-1 bg-red-200 rounded-md p-4 mx-2 text-center shadow-sm flex items-center justify-center">
         <div>
         {/* <h3 className="font-bold text-xl text-gray-800 mb-2">1 OT</h3> */}
-        <h3 className="font-bold text-xl text-gray-800 mb-2">6 ICU Beds</h3>
+        <h3 className="font-bold text-xl text-gray-800 mb-2">ICU Beds</h3>
         {/* <p className="text-gray-600 font-bold">OT</p> */}
         </div>
       </div>

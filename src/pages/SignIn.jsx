@@ -106,14 +106,14 @@ export default function SignIn() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-pink-600 text-white py-2 rounded-md hover:bg-pink-700 transition duration-300"
+            className="w-full bg-pink-500 text-white py-2 rounded-md hover:bg-pink-600 transition duration-300"
           >
             {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
 
         {error && (
-          <div className="mt-4 text-pink-600 text-sm text-center border border-pink-300 bg-pink-50 p-2 rounded">
+          <div className="mt-4 text-pink-500 text-sm text-center border border-pink-300 bg-pink-50 p-2 rounded">
             {error}
           </div>
         )}

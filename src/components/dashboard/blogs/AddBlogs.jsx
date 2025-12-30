@@ -86,7 +86,7 @@ function AddBlogs() {
           <p className="text-gray-500 text-sm">Manage all blogs</p>
         </div>
         <button
-          className="bg-pink-600 text-white px-4 py-2 rounded flex items-center gap-2"
+          className="bg-pink-500 text-white px-4 py-2 rounded flex items-center gap-2"
           onClick={openAddBlogModal}
         >
           <FaUserPlus /> Add Blog
@@ -142,7 +142,7 @@ function AddBlogs() {
                     <td className="p-2">
                       <button
                         onClick={() => openEditBlogModal(blog)}
-                        className="text-pink-600 hover:text-pink-800 transition p-1"
+                        className="text-pink-500 hover:text-pink-800 transition p-1"
                         title="Edit"
                       >
                         <MdEdit size={20} />
@@ -158,7 +158,7 @@ function AddBlogs() {
                     <td className="p-2">
                       <button
                         onClick={() => toggleRowExpand(blog._id)}
-                        className="text-pink-600 hover:text-pink-800"
+                        className="text-pink-500 hover:text-pink-800"
                         title="View Details"
                       >
                         {expandedRows[blog._id] ? <FaEyeSlash /> : <FaEye />}

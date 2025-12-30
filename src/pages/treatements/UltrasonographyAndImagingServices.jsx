@@ -17,9 +17,7 @@ const UltrasonographyAndImagingServices = () => {
           <div className="max-w-7xl mx-auto px-6 lg:px-40 text-white">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6">
               Ultrasonography
-              <span className="block text-pink-400">
-                & Imaging Services
-              </span>
+              <span className="block text-pink-400">& Imaging Services</span>
             </h1>
 
             <p className="max-w-2xl text-lg sm:text-xl text-gray-200 mb-8">
@@ -30,14 +28,14 @@ const UltrasonographyAndImagingServices = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="bg-pink-600 hover:bg-pink-700 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Book Scan
               </Link>
 
               <Link
                 to="/treatments"
-                className="bg-white/90 text-pink-600 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-white/90 text-pink-500 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Other Treatments
               </Link>
@@ -56,11 +54,11 @@ const UltrasonographyAndImagingServices = () => {
               What Is Ultrasonography?
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Ultrasonography (Ultrasound) is a safe, painless, and radiation-free
-              imaging technique that uses sound waves to create real-time images
-              of internal organs. It is widely used in pregnancy care,
-              gynecology, and infertility management to provide accurate and
-              early diagnosis.
+              Ultrasonography (Ultrasound) is a safe, painless, and
+              radiation-free imaging technique that uses sound waves to create
+              real-time images of internal organs. It is widely used in
+              pregnancy care, gynecology, and infertility management to provide
+              accurate and early diagnosis.
             </p>
           </div>
 
@@ -84,7 +82,7 @@ const UltrasonographyAndImagingServices = () => {
                   key={i}
                   className="flex items-start gap-4 bg-pink-50 p-5 rounded-xl"
                 >
-                  <span className="w-3 h-3 mt-2 bg-pink-600 rounded-full" />
+                  <span className="w-3 h-3 mt-2 bg-pink-500 rounded-full" />
                   <p className="text-gray-700">{item}</p>
                 </div>
               ))}
@@ -134,8 +132,8 @@ const UltrasonographyAndImagingServices = () => {
                 </h3>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mt-2">
                   <li>
-                    <strong>Pelvic Ultrasound:</strong> Examines uterus, ovaries,
-                    endometrium & fallopian tubes
+                    <strong>Pelvic Ultrasound:</strong> Examines uterus,
+                    ovaries, endometrium & fallopian tubes
                   </li>
                   <li>
                     <strong>Transvaginal Scan (TVS):</strong> High-resolution
@@ -188,9 +186,7 @@ const UltrasonographyAndImagingServices = () => {
 
           {/* SUMMARY */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Summary
-            </h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Summary</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Our Ultrasonography & Imaging Services provide accurate diagnostic
               support for pregnancy care, gynecological conditions, infertility
@@ -206,13 +202,13 @@ const UltrasonographyAndImagingServices = () => {
           <h3 className="text-xl font-bold text-gray-800 mb-4">
             Other Treatments
           </h3>
-          <ul className="space-y-3 text-pink-600 font-medium">
-                      {treatmentData.map((item) => (
-                        <li key={item.id}>
-                          <Link to={`/treatments/${item.id}`}>› {item.title}</Link>
-                        </li>
-                      ))}
-                    </ul>
+          <ul className="space-y-3 text-pink-500 font-medium">
+            {treatmentData.map((item) => (
+              <li key={item.id}>
+                <Link to={`/treatments/${item.id}`}>› {item.title}</Link>
+              </li>
+            ))}
+          </ul>
         </aside>
       </section>
     </div>

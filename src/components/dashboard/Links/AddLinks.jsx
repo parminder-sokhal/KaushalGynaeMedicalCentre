@@ -52,14 +52,14 @@ function AddLinks() {
         </div>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="bg-pink-600 text-white px-4 py-2 rounded flex items-center gap-2"
+          className="bg-pink-500 text-white px-4 py-2 rounded flex items-center gap-2"
         >
           <FaLink /> Add Link
         </button>
       </div>
 
       <div className="mb-6 bg-pink-50 border border-pink-200 rounded-lg p-4 text-sm text-gray-700">
-        <p className="font-semibold text-pink-700 mb-1">
+        <p className="font-semibold text-pink-600 mb-1">
           ℹ️ YouTube Link Format
         </p>
 
@@ -70,7 +70,7 @@ function AddLinks() {
 
         <p className="text-gray-600 mb-2">Please use the following format:</p>
 
-        <code className="block bg-white border border-pink-200 rounded px-3 py-2 text-sm text-pink-700">
+        <code className="block bg-white border border-pink-200 rounded px-3 py-2 text-sm text-pink-600">
           https://www.youtube.com/embed/&lt;YOUR_VIDEO_ID&gt;
         </code>
 
@@ -113,7 +113,7 @@ function AddLinks() {
               {groupedLinks[category].map((link, idx) => (
                 <tr key={link._id} className="border-t border-gray-300">
                   <td className="p-2">{idx + 1}</td>
-                  <td className="p-2 break-all text-pink-600 underline">
+                  <td className="p-2 break-all text-pink-500 underline">
                     <a
                       href={link.url}
                       target="_blank"
@@ -125,7 +125,7 @@ function AddLinks() {
                   <td className="p-2">
                     <button
                       onClick={() => setConfirmDeleteId(link._id)}
-                      className="text-pink-600 hover:text-pink-800"
+                      className="text-pink-500 hover:text-pink-800"
                       title="Delete"
                     >
                       <FaTrash />
@@ -154,7 +154,7 @@ function AddLinks() {
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => handleDelete(confirmDeleteId)}
-                className="bg-pink-600 text-white px-4 py-2 rounded"
+                className="bg-pink-500 text-white px-4 py-2 rounded"
               >
                 Delete
               </button>

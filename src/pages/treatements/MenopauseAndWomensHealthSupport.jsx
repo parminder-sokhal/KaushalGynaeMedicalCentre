@@ -24,20 +24,21 @@ const MenopauseAndWomensHealthSupport = () => {
 
             <p className="max-w-2xl text-lg sm:text-xl text-gray-200 mb-8">
               Personalized care to help women manage hormonal changes, relieve
-              symptoms, and maintain long-term health during and after menopause.
+              symptoms, and maintain long-term health during and after
+              menopause.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="bg-pink-600 hover:bg-pink-700 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Book Consultation
               </Link>
 
               <Link
                 to="/treatments"
-                className="bg-white/90 text-pink-600 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-white/90 text-pink-500 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Other Treatments
               </Link>
@@ -57,9 +58,9 @@ const MenopauseAndWomensHealthSupport = () => {
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Menopause is a natural stage in a woman’s life, usually occurring
-              between the ages of 45–55. Hormonal changes may begin years earlier
-              during perimenopause. While natural, these changes can cause
-              physical, emotional, and hormonal symptoms that benefit from
+              between the ages of 45–55. Hormonal changes may begin years
+              earlier during perimenopause. While natural, these changes can
+              cause physical, emotional, and hormonal symptoms that benefit from
               specialized medical care.
             </p>
           </div>
@@ -208,13 +209,13 @@ const MenopauseAndWomensHealthSupport = () => {
           <h3 className="text-xl font-bold text-gray-800 mb-4">
             Other Treatments
           </h3>
-          <ul className="space-y-3 text-pink-600 font-medium">
-                      {treatmentData.map((item) => (
-                        <li key={item.id}>
-                          <Link to={`/treatments/${item.id}`}>› {item.title}</Link>
-                        </li>
-                      ))}
-                    </ul>
+          <ul className="space-y-3 text-pink-500 font-medium">
+            {treatmentData.map((item) => (
+              <li key={item.id}>
+                <Link to={`/treatments/${item.id}`}>› {item.title}</Link>
+              </li>
+            ))}
+          </ul>
         </aside>
       </section>
     </div>

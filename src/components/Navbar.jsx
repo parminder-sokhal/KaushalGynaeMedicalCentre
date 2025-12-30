@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50 top-0">
       {/* Top Contact Bar */}
-      <div className="bg-pink-600 text-white py-2">
+      <div className="bg-pink-500 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
           {/* LEFT */}
           <div className="flex items-center gap-6">
@@ -51,7 +51,7 @@ const Navbar = () => {
             >
               <FaMapMarkerAlt size={16} />
               <span className="hidden lg:inline">
-                Sector 20, Panchkula, Haryana 134117
+                SCF 14, PEERMUCHALA, ZIRAKPUR, Punjab 160104
               </span>
             </Link>
           </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
           {/* RIGHT */}
           <div className="flex items-center gap-4">
             <span className="hidden lg:inline">
-              24/7 Emergency Service Available
+              24/7 Emergency / Ambulance Available
             </span>
 
             {/* SOCIAL MEDIA */}
@@ -83,18 +83,18 @@ const Navbar = () => {
             <Link to="/" className="flex-shrink-0">
               <img src="/logo.png" alt="Clinic Logo" className="h-16 w-auto" />
             </Link>
-            <span className="font-bold lg:text-2xl text-md text-pink-600">
+            <span className="font-bold lg:text-2xl text-md text-pink-500">
               Kaushal Gynae Medical Care
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.slice(0, 2).map((link) => (
+            {navLinks.slice(0, 1).map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-gray-700 hover:text-pink-600 font-medium"
+                className="text-gray-700 hover:text-pink-500 font-medium"
               >
                 {link.name}
               </Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
 
             {/* Services */}
             <div className="relative group">
-              <button className="flex items-center gap-1 text-gray-700 hover:text-pink-600 font-medium">
+              <button className="flex items-center gap-1 text-gray-700 hover:text-pink-500 font-medium">
                 Services <ChevronDown size={18} />
               </button>
               <div className="absolute left-0 mt-1 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all">
@@ -110,7 +110,7 @@ const Navbar = () => {
                   <Link
                     key={service.id}
                     to={`/services/${service.id}`}
-                    className="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600"
+                    className="block px-4 py-3 hover:bg-pink-50 hover:text-pink-500"
                   >
                     {service.title}
                   </Link>
@@ -120,7 +120,7 @@ const Navbar = () => {
 
             {/* Treatments */}
             <div className="relative group">
-              <button className="flex items-center gap-1 text-gray-700 hover:text-pink-600 font-medium">
+              <button className="flex items-center gap-1 text-gray-700 hover:text-pink-500 font-medium">
                 Treatments <ChevronDown size={18} />
               </button>
               <div className="absolute left-0 mt-1 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all">
@@ -128,7 +128,7 @@ const Navbar = () => {
                   <Link
                     key={treatment.id}
                     to={`/treatments/${treatment.id}`}
-                    className="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600"
+                    className="block px-4 py-3 hover:bg-pink-50 hover:text-pink-500"
                   >
                     {treatment.title}
                   </Link>
@@ -136,11 +136,11 @@ const Navbar = () => {
               </div>
             </div>
 
-            {navLinks.slice(2).map((link) => (
+            {navLinks.slice(1).map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-gray-700 hover:text-pink-600 font-medium"
+                className="text-gray-700 hover:text-pink-500 font-medium"
               >
                 {link.name}
               </Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
 
           {/* Hamburger */}
           <button
-            className="md:hidden text-gray-700 hover:text-pink-600"
+            className="md:hidden text-gray-700 hover:text-pink-500"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}

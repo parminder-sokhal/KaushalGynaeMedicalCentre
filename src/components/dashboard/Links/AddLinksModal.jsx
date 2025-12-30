@@ -75,7 +75,7 @@ function AddLinksModal({ open, onClose }) {
           <h2 className="text-xl font-bold">Add New Link</h2>
           <button
             onClick={onClose}
-            className="text-gray-600 hover:text-pink-600"
+            className="text-gray-600 hover:text-pink-500"
             title="Close"
           >
             <FaTimes />
@@ -120,7 +120,7 @@ function AddLinksModal({ open, onClose }) {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700"
+              className="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600"
             >
               Create Link
             </button>

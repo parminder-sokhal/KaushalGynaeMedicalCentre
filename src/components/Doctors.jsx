@@ -39,7 +39,7 @@ const Doctors = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Meet Our Expert Doctors
           </h2>
-          <div className="w-24 h-1 bg-pink-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our highly qualified and experienced medical professionals are
             dedicated to providing exceptional care
@@ -72,7 +72,7 @@ const Doctors = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {doctor.name}
                 </h3>
-                <div className="flex items-center gap-2 text-pink-600 mb-4">
+                <div className="flex items-center gap-2 text-pink-500 mb-4">
                   <GraduationCap size={20} />
                   <span className="font-semibold">{doctor.qualification}</span>
                 </div>
@@ -90,7 +90,7 @@ const Doctors = () => {
                   <ul className="space-y-2">
                     {doctor.expertise.map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-pink-600 mt-1">•</span>
+                        <span className="text-pink-500 mt-1">•</span>
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -99,17 +99,6 @@ const Doctors = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-pink-600 to-blue-600 text-white rounded-2xl p-8 inline-block">
-            <p className="text-2xl font-bold mb-2">
-              Trusted by Celebrities & International Patients
-            </p>
-            <p className="text-lg opacity-90">
-              Experience world-class medical care with our expert team
-            </p>
-          </div>
         </div>
       </div>
     </section>

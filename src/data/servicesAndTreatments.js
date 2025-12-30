@@ -14,10 +14,6 @@ export const servicesData = [
     title: "Gynae-Surgical Procedures (Laparoscopy, Oophorectomy, Salpingectomy, etc.)",
   },
   {
-    id: "infertility-iui",
-    title: "Infertility Services / Intrauterine Insemination (IUI)",
-  },
-  {
     id: "ultrasonography",
     title: "Ultrasonography / Imaging Services",
   },
@@ -43,10 +39,6 @@ export const treatmentData = [
   {
     id: "high-risk-pregnancy-management",
     title: "High-Risk Pregnancy Management",
-  },
-  {
-    id: "ultrasonography-and-imaging-services",
-    title: "Ultrasonography and Imaging Services",
   },
   {
     id: "gynae-surgical-procedures",

@@ -105,7 +105,7 @@ function Videos() {
                         loading="lazy"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 transition duration-300">
-                        <FaYoutube className="text-pink-600 text-6xl" />
+                        <FaYoutube className="text-pink-500 text-6xl" />
                       </div>
                     </div>
                   ) : (

@@ -19,8 +19,8 @@ const AboutUs = () => {
               About Us
             </h1>
             <p className="max-w-3xl mx-auto text-lg sm:text-xl text-gray-200">
-              Compassionate, ethical, and advanced women’s healthcare —
-              trusted by thousands since 2013.
+              Compassionate, ethical, and advanced women’s healthcare — trusted
+              by thousands since 2013.
             </p>
           </div>
         </div>
@@ -37,8 +37,8 @@ const AboutUs = () => {
             Kaushal Gynae and Medical Centre stands as a trusted name in women’s
             healthcare, known for excellence in gynecology, obstetrics, and
             comprehensive medical services. Established in 2013, the centre has
-            earned the confidence of thousands of patients through compassionate,
-            ethical, and high-quality care.
+            earned the confidence of thousands of patients through
+            compassionate, ethical, and high-quality care.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ const AboutUs = () => {
               key={i}
               className="p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-white shadow hover:shadow-lg transition"
             >
-              <item.icon className="text-pink-600 mb-4" size={32} />
+              <item.icon className="text-pink-500 mb-4" size={32} />
               <h3 className="font-bold text-lg text-gray-900 mb-2">
                 {item.title}
               </h3>
@@ -88,9 +88,9 @@ const AboutUs = () => {
             <p className="text-gray-600 leading-relaxed text-lg">
               Operating from a modern facility in Peer Muchalla, Zirakpur,
               Kaushal Gynae and Medical Centre is equipped with advanced
-              operation theatres, cutting-edge diagnostics, and
-              high-precision surgical technology — ensuring safety,
-              accuracy, and faster recovery.
+              operation theatres, cutting-edge diagnostics, and high-precision
+              surgical technology — ensuring safety, accuracy, and faster
+              recovery.
             </p>
           </div>
 
@@ -118,8 +118,8 @@ const AboutUs = () => {
               Our Vision
             </h3>
             <p className="text-gray-700">
-              To be a centre of excellence recognized for innovation,
-              integrity, and superior patient outcomes.
+              To be a centre of excellence recognized for innovation, integrity,
+              and superior patient outcomes.
             </p>
           </div>
 

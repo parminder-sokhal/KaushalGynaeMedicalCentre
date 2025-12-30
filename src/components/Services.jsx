@@ -78,7 +78,7 @@ const Services = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Our Services
           </h2>
-          <div className="w-24 h-1 bg-pink-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive women’s healthcare services delivered with expertise,
             compassion, and advanced medical technology.
@@ -93,7 +93,7 @@ const Services = () => {
               key={index}
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
             >
-              <div className="bg-gradient-to-br from-pink-500 to-pink-600 text-white w-20 h-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="bg-gradient-to-br from-pink-500 to-pink-500 text-white w-20 h-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -107,7 +107,7 @@ const Services = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 bg-gradient-to-r from-pink-600 to-blue-600 rounded-2xl p-8 md:p-12 text-white text-center">
+        <div className="mt-16 bg-gradient-to-r from-pink-500 to-blue-600 rounded-2xl p-8 md:p-12 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">
             Need Medical Consultation?
           </h3>
@@ -116,7 +116,7 @@ const Services = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+            className="inline-block bg-white text-pink-500 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
           >
             Book Appointment Now
           </Link>

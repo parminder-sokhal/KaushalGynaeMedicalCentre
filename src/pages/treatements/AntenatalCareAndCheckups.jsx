@@ -28,14 +28,14 @@ const AntenatalCareAndCheckups = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="bg-pink-600 hover:bg-pink-700 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Book Appointment
               </Link>
 
               <Link
                 to="/treatments"
-                className="bg-white/90 text-pink-600 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-white/90 text-pink-500 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Other Treatments
               </Link>
@@ -80,7 +80,7 @@ const AntenatalCareAndCheckups = () => {
                   key={i}
                   className="flex items-start gap-4 bg-pink-50 p-5 rounded-xl"
                 >
-                  <span className="w-3 h-3 mt-2 bg-pink-600 rounded-full" />
+                  <span className="w-3 h-3 mt-2 bg-pink-500 rounded-full" />
                   <p className="text-gray-700">{item}</p>
                 </div>
               ))}
@@ -218,7 +218,7 @@ const AntenatalCareAndCheckups = () => {
           <h3 className="text-xl font-bold text-gray-800 mb-4">
             Other Treatments
           </h3>
-          <ul className="space-y-3 text-pink-600 font-medium">
+          <ul className="space-y-3 text-pink-500 font-medium">
             {treatmentData.map((item) => (
               <li key={item.id}>
                 <Link to={`/treatments/${item.id}`}>› {item.title}</Link>

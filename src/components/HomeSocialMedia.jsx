@@ -17,10 +17,8 @@ const HomeSocialMedia = () => {
     dispatch(getLinks());
   }, [dispatch]);
 
-  const homeYoutube =
-    links?.filter((l) => l.category === "homeyoutube") || [];
-  const homeInsta =
-    links?.filter((l) => l.category === "homeinsta") || [];
+  const homeYoutube = links?.filter((l) => l.category === "homeyoutube") || [];
+  const homeInsta = links?.filter((l) => l.category === "homeinsta") || [];
 
   const handlePlay = (id) =>
     setActiveVideos((prev) => ({ ...prev, [id]: true }));
@@ -28,9 +26,8 @@ const HomeSocialMedia = () => {
   if (loading) return null;
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-5 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 space-y-20">
-
         {/* ================= YOUTUBE SECTION ================= */}
         {homeYoutube.length > 0 && (
           <div>
@@ -84,7 +81,7 @@ const HomeSocialMedia = () => {
         {homeInsta.length > 0 && (
           <div>
             <div className="flex items-center justify-center gap-3 mb-10">
-              <FaInstagram className="text-pink-600 text-4xl" />
+              <FaInstagram className="text-pink-500 text-4xl" />
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
                 Instagram Highlights
               </h2>
@@ -92,8 +89,7 @@ const HomeSocialMedia = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {homeInsta.map((post) => {
-                const reelCode =
-                  post.url.split("/reel/")[1]?.split("/")[0];
+                const reelCode = post.url.split("/reel/")[1]?.split("/")[0];
 
                 return (
                   <div

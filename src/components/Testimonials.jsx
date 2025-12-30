@@ -47,7 +47,7 @@ const Testimonials = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             What Our Patients Say
           </h2>
-          <div className="w-24 h-1 bg-pink-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Read testimonials from our satisfied patients who have experienced
             our compassionate care
@@ -83,7 +83,7 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-pink-600 to-blue-600 rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 bg-gradient-to-r from-pink-500 to-blue-600 rounded-2xl p-8 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">
             Join Thousands of Satisfied Patients
           </h3>
