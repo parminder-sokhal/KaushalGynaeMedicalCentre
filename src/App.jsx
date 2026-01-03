@@ -25,6 +25,11 @@ import NormalDelivery from "./pages/services/NormalDelivery";
 import GynaeSurgical from "./pages/services/GynaeSurgical";
 import InfertilityIUI from "./pages/services/InfertilityIUI";
 import Ultrasonography from "./pages/services/Ultrasonography";
+import CosmeticGynology from "./pages/services/CosmeticGynecology";
+import NormalDelivery2 from "./pages/services/NormalDelivery2";
+import LaparoscopicSurgery from "./pages/services/LaparoscopicSurgery";
+import Csectiondelivery from "./pages/services/CSectionDelivery";
+import Mtpcenter from "./pages/services/MtpCenter";
 
 /* --- Treatment Pages --- */
 import HelpsManageHormonalAndEmotionalChanges from "./pages/treatements/HelpsManageHormonalAndEmotionalChanges";
@@ -83,6 +88,23 @@ function AppContent() {
             path="/services/ultrasonography"
             element={<Ultrasonography />}
           />
+          <Route
+            path="/services/cosmetic-gynecology"
+            element={<CosmeticGynology />}  
+          />
+          <Route
+            path="/services/normal-delivery-2"
+            element={<NormalDelivery2 />}
+          />
+          <Route
+            path="/services/laparoscopic-surgery"
+            element={<LaparoscopicSurgery />}
+          />
+          <Route
+            path="/services/c-section-delivery"
+            element={<Csectiondelivery />}
+          />
+          <Route path="/services/mtp-center" element={<Mtpcenter />} />
           {/* --- Treatments --- */}
           <Route
             path="/treatments/helps-manage-hormonal-and-emotional-changes"

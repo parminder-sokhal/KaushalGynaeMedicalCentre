@@ -29,7 +29,8 @@ const Hero = () => {
             {/* CTA BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <a
-                href="#contact"
+                href="https://u.tatvacare.in/r/SPtEZB"
+                
                 className="inline-flex items-center justify-center gap-2 bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-pink-600 transition shadow-lg"
               >
                 Book Appointment
@@ -69,6 +70,13 @@ const Hero = () => {
                 src="https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Hospital"
                 className="w-full h-[320px] sm:h-[420px] lg:h-[520px] object-cover"
+              />
+              <video
+                src="/hero.mp4"
+                autoPlay
+                loop
+                muted
+                className="absolute top-0 left-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>

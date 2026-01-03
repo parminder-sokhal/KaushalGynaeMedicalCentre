@@ -29,7 +29,7 @@ const GynaeSurgical = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/contact"
+                to="https://u.tatvacare.in/r/SPtEZB"
                 className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Book Appointment

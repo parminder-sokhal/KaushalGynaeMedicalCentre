@@ -17,6 +17,27 @@ export const servicesData = [
     id: "ultrasonography",
     title: "Ultrasonography / Imaging Services",
   },
+  {
+    id: "cosmetic-gynecology",
+    title: "Cosmetic Gynecology Procedures",
+  },
+  {
+    id: "normal-delivery-2",    
+    title: "Normal Delivery",
+  },
+  {
+    id: "laparoscopic-surgery",
+    title: "Laparoscopic Surgery",
+
+  },
+  {
+    id: "c-section-delivery", 
+    title: "C-Section Delivery Services",
+  },
+  {
+    id: "mtp-center",
+    title: "MTP Center Services",
+  },
 ];
 
 export const treatmentData = [

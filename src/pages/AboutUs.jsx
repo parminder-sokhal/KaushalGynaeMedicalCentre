@@ -35,10 +35,13 @@ const AboutUs = () => {
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
             Kaushal Gynae and Medical Centre stands as a trusted name in women’s
-            healthcare, known for excellence in gynecology, obstetrics, and
-            comprehensive medical services. Established in 2013, the centre has
-            earned the confidence of thousands of patients through
-            compassionate, ethical, and high-quality care.
+            healthcare, known for excellence in gynecology, obstetrics, advanced
+            laparoscopic surgeries, and cosmetic gynecology services.
+            Established in 2013, the centre has earned the confidence of
+            thousands of patients through compassionate, ethical, and
+            high-quality care. With a strong focus on modern, minimally invasive
+            techniques and personalized treatment, the centre is committed to
+            ensuring safety, comfort, and optimal outcomes for every woman.
           </p>
         </div>
 

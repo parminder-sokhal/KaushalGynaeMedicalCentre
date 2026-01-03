@@ -115,7 +115,7 @@ const Services = () => {
             Our expert doctors are available to guide you at every stage.
           </p>
           <Link
-            to="/contact"
+            to="https://u.tatvacare.in/r/SPtEZB"
             className="inline-block bg-white text-pink-500 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
           >
             Book Appointment Now

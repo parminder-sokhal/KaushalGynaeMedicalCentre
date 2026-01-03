@@ -83,9 +83,12 @@ const Navbar = () => {
             <Link to="/" className="flex-shrink-0">
               <img src="/logo.png" alt="Clinic Logo" className="h-16 w-auto" />
             </Link>
-            <span className="font-bold lg:text-2xl text-md text-pink-500">
+            <span className="font-bold lg:text-2xl text-sm text-md text-pink-500">
               Kaushal Gynae Medical Care
             </span>
+            <Link to="/" className="flex-shrink-0">
+              <img src="/logo2.png" alt="Clinic Logo" className="sm:h-14 h-5  w-auto" />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
