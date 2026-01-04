@@ -4,7 +4,7 @@ const Doctors = () => {
   const doctors = [
     {
       name: "Dr. Ruchita Kaushal",
-      qualification: "MD Gynaecology",
+      qualification: "MS Gynaecology",
       specialization: "Gynaecology & Obstetrics",
       experience: "10+ Years",
       image:
