@@ -76,7 +76,7 @@ export default function Dashboard() {
                   dispatch(logout());
                   navigate("/");
                 }}
-                className={`flex w-full items-center p-2 rounded-md text-sm font-medium transition-colors text-black hover:text-white hover:bg-pink-500`}
+                className={`flex w-full items-center p-2 rounded-md text-sm font-medium transition-colors text-black hover:text-white hover:bg-green-500`}
               >
                 <FaChalkboardTeacher />
                 <span className="ml-3">Logout</span>
@@ -109,7 +109,9 @@ function SidebarItem({ icon, text, to, active, onClick }) {
         to={to}
         onClick={onClick}
         className={`flex items-center p-2 rounded-md text-sm font-medium transition-colors ${
-          active ? "bg-pink-500 text-white" : "text-gray-700 hover:bg-pink-100"
+          active
+            ? "bg-green-500 text-white"
+            : "text-gray-700 hover:bg-green-100"
         }`}
       >
         {icon}

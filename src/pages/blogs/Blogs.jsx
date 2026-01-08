@@ -10,9 +10,7 @@ const Blogs = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredBlogs, setFilteredBlogs] = useState([]);
 
-  const { publishedBlogs, loading, error } = useSelector(
-    (state) => state.blog
-  );
+  const { publishedBlogs, loading, error } = useSelector((state) => state.blog);
 
   useEffect(() => {
     dispatch(getPublishedBlogs());
@@ -37,7 +35,7 @@ const Blogs = () => {
     <div className="container mx-auto mt-20 px-6 sm:px-10 md:px-14 lg:px-20 py-10">
       {/* HEADER */}
       <div className="py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <h1 className="text-3xl sm:text-6xl font-semibold text-pink-500">
+        <h1 className="text-3xl sm:text-6xl font-semibold text-green-500">
           Blogs
         </h1>
 
@@ -46,7 +44,7 @@ const Blogs = () => {
           placeholder="Search blogs..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full sm:w-1/3 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full sm:w-1/3 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
         />
       </div>
 

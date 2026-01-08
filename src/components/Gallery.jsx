@@ -33,7 +33,7 @@ const Gallery = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Our Facility Gallery
           </h2>
-          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Take a virtual tour of our state-of-the-art medical facility
             equipped with the latest technology
@@ -66,17 +66,17 @@ const Gallery = () => {
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-xl shadow-md text-center">
-            <div className="text-4xl font-bold text-pink-500 mb-2">Latest</div>
+            <div className="text-4xl font-bold text-green-500 mb-2">Latest</div>
             <p className="text-gray-700 font-semibold">Medical Equipment</p>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-md text-center">
-            <div className="text-4xl font-bold text-pink-500 mb-2">
+            <div className="text-4xl font-bold text-green-500 mb-2">
               Advanced
             </div>
             <p className="text-gray-700 font-semibold">Surgical Instruments</p>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-md text-center">
-            <div className="text-4xl font-bold text-pink-500 mb-2">24/7</div>
+            <div className="text-4xl font-bold text-green-500 mb-2">24/7</div>
             <p className="text-gray-700 font-semibold">Emergency Services</p>
           </div>
         </div>

@@ -52,14 +52,14 @@ function AddLinks() {
         </div>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="bg-pink-500 text-white px-4 py-2 rounded flex items-center gap-2"
+          className="bg-green-500 text-white px-4 py-2 rounded flex items-center gap-2"
         >
           <FaLink /> Add Link
         </button>
       </div>
 
-      <div className="mb-6 bg-pink-50 border border-pink-200 rounded-lg p-4 text-sm text-gray-700">
-        <p className="font-semibold text-pink-600 mb-1">
+      <div className="mb-6 bg-green-50 border border-green-200 rounded-lg p-4 text-sm text-gray-700">
+        <p className="font-semibold text-green-600 mb-1">
           ℹ️ YouTube Link Format
         </p>
 
@@ -70,13 +70,13 @@ function AddLinks() {
 
         <p className="text-gray-600 mb-2">Please use the following format:</p>
 
-        <code className="block bg-white border border-pink-200 rounded px-3 py-2 text-sm text-pink-600">
+        <code className="block bg-white border border-green-200 rounded px-3 py-2 text-sm text-green-600">
           https://www.youtube.com/embed/&lt;YOUR_VIDEO_ID&gt;
         </code>
 
         <p className="mt-2 text-gray-600">Example:</p>
 
-        <code className="block bg-white border border-pink-200 rounded px-3 py-2 text-sm text-gray-700">
+        <code className="block bg-white border border-green-200 rounded px-3 py-2 text-sm text-gray-700">
           https://www.youtube.com/embed/c6F_rW-u6cY
         </code>
       </div>
@@ -86,7 +86,7 @@ function AddLinks() {
         <input
           type="text"
           placeholder="Search by category"
-          className="pl-10 pr-4 py-2 w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-pink-500"
+          className="pl-10 pr-4 py-2 w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -113,7 +113,7 @@ function AddLinks() {
               {groupedLinks[category].map((link, idx) => (
                 <tr key={link._id} className="border-t border-gray-300">
                   <td className="p-2">{idx + 1}</td>
-                  <td className="p-2 break-all text-pink-500 underline">
+                  <td className="p-2 break-all text-green-500 underline">
                     <a
                       href={link.url}
                       target="_blank"
@@ -125,7 +125,7 @@ function AddLinks() {
                   <td className="p-2">
                     <button
                       onClick={() => setConfirmDeleteId(link._id)}
-                      className="text-pink-500 hover:text-pink-800"
+                      className="text-green-500 hover:text-green-800"
                       title="Delete"
                     >
                       <FaTrash />
@@ -154,7 +154,7 @@ function AddLinks() {
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => handleDelete(confirmDeleteId)}
-                className="bg-pink-500 text-white px-4 py-2 rounded"
+                className="bg-green-500 text-white px-4 py-2 rounded"
               >
                 Delete
               </button>

@@ -86,7 +86,7 @@ function AddBlogs() {
           <p className="text-gray-500 text-sm">Manage all blogs</p>
         </div>
         <button
-          className="bg-pink-500 text-white px-4 py-2 rounded flex items-center gap-2"
+          className="bg-green-500 text-white px-4 py-2 rounded flex items-center gap-2"
           onClick={openAddBlogModal}
         >
           <FaUserPlus /> Add Blog
@@ -98,7 +98,7 @@ function AddBlogs() {
         <input
           type="text"
           placeholder="Search by title"
-          className="pl-10 pr-4 py-2 w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-pink-500"
+          className="pl-10 pr-4 py-2 w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -142,7 +142,7 @@ function AddBlogs() {
                     <td className="p-2">
                       <button
                         onClick={() => openEditBlogModal(blog)}
-                        className="text-pink-500 hover:text-pink-800 transition p-1"
+                        className="text-green-500 hover:text-green-800 transition p-1"
                         title="Edit"
                       >
                         <MdEdit size={20} />
@@ -158,7 +158,7 @@ function AddBlogs() {
                     <td className="p-2">
                       <button
                         onClick={() => toggleRowExpand(blog._id)}
-                        className="text-pink-500 hover:text-pink-800"
+                        className="text-green-500 hover:text-green-800"
                         title="View Details"
                       >
                         {expandedRows[blog._id] ? <FaEyeSlash /> : <FaEye />}

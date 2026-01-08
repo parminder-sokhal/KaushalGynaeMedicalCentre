@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { servicesData } from "../../data/servicesAndTreatments";
 
-const AntenatalCare = () => {
+const PainClinic = () => {
   return (
     <div className="w-full bg-white font-sans">
       {/* HERO SECTION */}
       <section className="relative">
         <img
-          src="/pregnant-woman-receiving-ultrasound-scan-stomach.jpg"
-          alt="Antenatal Pregnancy Care"
+          src="/pain-clinic-treatment-doctor-patient.jpg"
+          alt="Pain Clinic"
           className="w-full h-[70vh] object-cover mt-28"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
@@ -17,15 +17,15 @@ const AntenatalCare = () => {
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-6 lg:px-40 text-white">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6">
-              Antenatal Care
+              Pain Clinic
               <span className="block text-green-400">
-                & Pregnancy Check-ups
+                Advanced Pain Management
               </span>
             </h1>
 
             <p className="max-w-2xl text-lg sm:text-xl text-gray-200 mb-8">
-              Comprehensive pregnancy care to ensure the health, safety, and
-              comfort of both mother and baby throughout every stage.
+              Specialized care focused on diagnosing, treating, and managing
+              acute and chronic pain to improve quality of life.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -54,98 +54,91 @@ const AntenatalCare = () => {
           {/* WHY IMPORTANT */}
           <section>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Why Antenatal Care Is Important
+              Why Pain Clinic Care Is Important
             </h2>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Ensures the healthy growth and development of the baby</li>
-              <li>Monitors the mother’s physical and emotional health</li>
-              <li>Detects and manages high-risk conditions early</li>
-              <li>Provides guidance on diet, exercise, and supplements</li>
-              <li>Prepares the mother for delivery and breastfeeding</li>
+              <li>Helps manage chronic and long-standing pain conditions</li>
+              <li>Reduces dependency on long-term pain medications</li>
+              <li>Improves mobility, sleep, and daily functioning</li>
+              <li>Addresses the root cause of pain, not just symptoms</li>
+              <li>Enhances overall physical and emotional wellbeing</li>
             </ul>
           </section>
 
           {/* INCLUDED */}
           <section>
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              What Is Included in Antenatal Care?
+              What Is Included in Pain Clinic Services?
             </h2>
 
             <div className="space-y-5">
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">
-                  1. Regular Pregnancy Checkups
+                  1. Comprehensive Pain Assessment
                 </h3>
                 <p>
-                  Monitoring blood pressure, weight, baby’s heart rate, uterus
-                  size, and overall pregnancy progress.
+                  Detailed evaluation to identify the source, severity, and
+                  impact of pain on daily life.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">
-                  2. Ultrasound Scans
+                  2. Chronic Pain Management
                 </h3>
                 <p>
-                  Includes early scan, NT scan, anomaly scan, and growth scans
-                  to monitor fetal development and detect abnormalities.
+                  Treatment for back pain, neck pain, arthritis, joint pain,
+                  fibromyalgia, and nerve-related pain.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">
-                  3. Blood Tests & Diagnostic Screenings
+                  3. Interventional Pain Procedures
                 </h3>
                 <p>
-                  Hemoglobin, thyroid, blood sugar, infection screenings, and
-                  other essential tests to ensure maternal and fetal safety.
+                  Nerve blocks, epidural injections, trigger point injections,
+                  and other minimally invasive pain-relief techniques.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">
-                  4. Nutritional & Lifestyle Guidance
+                  4. Post-Surgical & Injury Pain Care
                 </h3>
                 <p>
-                  Diet planning, supplements (iron, calcium, folic acid),
-                  hydration, sleep, and safe physical activity guidance.
+                  Specialized pain control following surgery, trauma, or
+                  orthopedic injuries.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">
-                  5. Monitoring High-Risk Pregnancies
+                  5. Neuropathic Pain Treatment
                 </h3>
                 <p>
-                  Specialized care for mothers with diabetes, hypertension,
-                  thyroid disorders, or multiple pregnancies.
+                  Care for conditions such as sciatica, diabetic neuropathy,
+                  and nerve compression syndromes.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">
-                  6. Vaccination Guidance
-                </h3>
-                <p>Includes TT, Tdap, and Flu vaccines as advised.</p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800">
-                  7. Emotional & Mental Health Support
+                  6. Medication & Non-Drug Therapies
                 </h3>
                 <p>
-                  Support for anxiety, mood changes, and emotional wellbeing
-                  throughout pregnancy.
+                  Balanced approach using medications, physiotherapy
+                  guidance, and lifestyle modification.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">
-                  8. Birth Planning & Preparation
+                  7. Multidisciplinary Pain Management
                 </h3>
                 <p>
-                  Guidance on labor signs, delivery options, hospital
-                  preparation, and breastfeeding.
+                  Coordinated care involving pain specialists, physiotherapists,
+                  and rehabilitation experts.
                 </p>
               </div>
             </div>
@@ -155,9 +148,9 @@ const AntenatalCare = () => {
           <section className="bg-gradient-to-br from-green-50 to-white p-8 rounded-3xl shadow">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Summary</h2>
             <p>
-              Antenatal Care & Checkups provide complete medical and emotional
-              support for expecting mothers, ensuring a healthy pregnancy and a
-              safe, confident childbirth journey.
+              Pain Clinic services focus on long-term relief and functional
+              improvement through personalized, evidence-based pain management
+              strategies, helping patients regain control of their lives.
             </p>
           </section>
         </div>
@@ -180,4 +173,4 @@ const AntenatalCare = () => {
   );
 };
 
-export default AntenatalCare;
+export default PainClinic;

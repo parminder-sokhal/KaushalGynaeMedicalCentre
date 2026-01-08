@@ -35,7 +35,7 @@ const About = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             About Kaushal Gynae & Medical Centre
           </h2>
-          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Established in 2013, we have become one of the leading gynaecology
             hospitals in the city
@@ -67,12 +67,12 @@ const About = () => {
               patient care.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4">
-              <div className="bg-pink-50 p-4 rounded-lg">
-                <p className="text-3xl font-bold text-pink-500 mb-2">5000+</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-3xl font-bold text-green-500 mb-2">5000+</p>
                 <p className="text-gray-700 font-semibold">Happy Patients</p>
               </div>
-              <div className="bg-pink-50 p-4 rounded-lg">
-                <p className="text-3xl font-bold text-pink-500 mb-2">100%</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-3xl font-bold text-green-500 mb-2">100%</p>
                 <p className="text-gray-700 font-semibold">
                   Patient Satisfaction
                 </p>
@@ -85,9 +85,9 @@ const About = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-pink-50 to-blue-50 p-6 rounded-xl hover:shadow-lg transition-shadow"
+              className="bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-xl hover:shadow-lg transition-shadow"
             >
-              <div className="bg-pink-500 text-white w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+              <div className="bg-green-500 text-white w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                 {value.icon}
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-3">

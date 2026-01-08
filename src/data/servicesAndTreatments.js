@@ -2,6 +2,10 @@
 
 export const servicesData = [
   {
+    id: "cosmetic-gynecology",
+    title: "Introducing Cosmetic gynaecology",
+  },
+  {
     id: "antenatal-care",
     title: "Antenatal (Pregnancy) Care & Check-ups",
   },
@@ -16,10 +20,6 @@ export const servicesData = [
   {
     id: "ultrasonography",
     title: "Ultrasonography / Imaging Services",
-  },
-  {
-    id: "cosmetic-gynecology",
-    title: "Cosmetic Gynecology Procedures",
   },
   {
     id: "normal-delivery-2",    
@@ -37,6 +37,14 @@ export const servicesData = [
   {
     id: "mtp-center",
     title: "MTP Center Services",
+  },
+  {
+    id: "Pain-clinic",
+    title: "Pain Clinic Services",
+  },
+  {
+    id: "CriticalCareHDU",
+    title: "critical care / Hdu",
   },
 ];
 

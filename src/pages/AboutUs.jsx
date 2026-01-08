@@ -71,9 +71,9 @@ const AboutUs = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-white shadow hover:shadow-lg transition"
+              className="p-6 rounded-2xl bg-gradient-to-br from-green-50 to-white shadow hover:shadow-lg transition"
             >
-              <item.icon className="text-pink-500 mb-4" size={32} />
+              <item.icon className="text-green-500 mb-4" size={32} />
               <h3 className="font-bold text-lg text-gray-900 mb-2">
                 {item.title}
               </h3>
@@ -106,7 +106,7 @@ const AboutUs = () => {
 
         {/* MISSION / VISION / VALUES */}
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-8 rounded-3xl bg-pink-50">
+          <div className="p-8 rounded-3xl bg-green-50">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Our Mission
             </h3>

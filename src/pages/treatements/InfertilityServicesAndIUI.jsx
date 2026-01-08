@@ -17,7 +17,7 @@ const InfertilityServicesAndIUI = () => {
           <div className="max-w-7xl mx-auto px-6 lg:px-40 text-white">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6">
               Infertility Services
-              <span className="block text-pink-400">& IUI Treatment</span>
+              <span className="block text-green-400">& IUI Treatment</span>
             </h1>
 
             <p className="max-w-2xl text-lg sm:text-xl text-gray-200 mb-8">
@@ -28,14 +28,14 @@ const InfertilityServicesAndIUI = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="https://u.tatvacare.in/r/SPtEZB"
-                className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Book Consultation
               </Link>
 
               <Link
                 to="/treatments"
-                className="bg-white/90 text-pink-500 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+                className="bg-white/90 text-green-500 hover:bg-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
               >
                 Other Treatments
               </Link>
@@ -212,7 +212,7 @@ const InfertilityServicesAndIUI = () => {
           </div>
 
           {/* SUMMARY */}
-          <div className="bg-gradient-to-br from-pink-50 to-white p-10 rounded-3xl shadow">
+          <div className="bg-gradient-to-br from-green-50 to-white p-10 rounded-3xl shadow">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Summary</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Our Infertility Services and IUI treatment provide hope and
@@ -229,7 +229,7 @@ const InfertilityServicesAndIUI = () => {
           <h3 className="text-xl font-bold text-gray-800 mb-4">
             Other Treatments
           </h3>
-          <ul className="space-y-3 text-pink-500 font-medium">
+          <ul className="space-y-3 text-green-500 font-medium">
             {treatmentData.map((item) => (
               <li key={item.id}>
                 <Link to={`/treatments/${item.id}`}>› {item.title}</Link>

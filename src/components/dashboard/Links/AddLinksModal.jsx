@@ -75,7 +75,7 @@ function AddLinksModal({ open, onClose }) {
           <h2 className="text-xl font-bold">Add New Link</h2>
           <button
             onClick={onClose}
-            className="text-gray-600 hover:text-pink-500"
+            className="text-gray-600 hover:text-green-500"
             title="Close"
           >
             <FaTimes />
@@ -92,10 +92,10 @@ function AddLinksModal({ open, onClose }) {
               value={categoryOptions.find(
                 (opt) => opt.value === formData.category
               )}
-              className={errors.category ? "border-pink-500 rounded" : ""}
+              className={errors.category ? "border-green-500 rounded" : ""}
             />
             {errors.category && (
-              <p className="text-pink-500 text-sm mt-1">{errors.category}</p>
+              <p className="text-green-500 text-sm mt-1">{errors.category}</p>
             )}
           </div>
 
@@ -108,19 +108,19 @@ function AddLinksModal({ open, onClose }) {
               onChange={handleChange}
               placeholder="https://example.com/profile"
               className={`w-full border p-2 rounded ${
-                errors.url ? "border-pink-500" : ""
+                errors.url ? "border-green-500" : ""
               }`}
               required
             />
             {errors.url && (
-              <p className="text-pink-500 text-sm">{errors.url}</p>
+              <p className="text-green-500 text-sm">{errors.url}</p>
             )}
           </div>
 
           <div className="flex justify-end">
             <button
               type="submit"
-              className="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600"
+              className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600"
             >
               Create Link
             </button>

@@ -17,7 +17,7 @@ const Contact = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Contact us today to schedule an appointment or for any inquiries
           </p>
@@ -30,7 +30,7 @@ const Contact = () => {
             </h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-pink-500 text-white p-3 rounded-lg">
+                <div className="bg-green-500 text-white p-3 rounded-lg">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -46,14 +46,14 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-pink-500 text-white p-3 rounded-lg">
+                <div className="bg-green-500 text-white p-3 rounded-lg">
                   <Phone size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
                   <a
                     href="tel:9316194659"
-                    className="text-gray-600 hover:text-pink-500"
+                    className="text-gray-600 hover:text-green-500"
                   >
                     +91 9316194659
                   </a>
@@ -61,14 +61,14 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-pink-500 text-white p-3 rounded-lg">
+                <div className="bg-green-500 text-white p-3 rounded-lg">
                   <Mail size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Email</h4>
                   <a
                     href="mailto:drkaushalruchita@gmail.com"
-                    className="text-gray-600 hover:text-pink-500"
+                    className="text-gray-600 hover:text-green-500"
                   >
                     drkaushalruchita@gmail.com
                   </a>
@@ -76,7 +76,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-pink-500 text-white p-3 rounded-lg">
+                <div className="bg-green-500 text-white p-3 rounded-lg">
                   <Clock size={24} />
                 </div>
                 <div>
@@ -99,20 +99,20 @@ const Contact = () => {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="bg-pink-500 text-white p-3 rounded-lg hover:bg-pink-600 transition-colors"
+                  className="bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition-colors"
                 >
                   <Facebook size={24} />
                 </a>
                 <a
                   href="#"
-                  className="bg-pink-500 text-white p-3 rounded-lg hover:bg-pink-600 transition-colors"
+                  className="bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition-colors"
                 >
                   <Youtube size={24} />
                 </a>
-                
+
                 <a
                   href="#"
-                  className="bg-pink-500 text-white p-3 rounded-lg hover:bg-pink-600 transition-colors"
+                  className="bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition-colors"
                 >
                   <Instagram size={24} />
                 </a>
@@ -132,7 +132,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -142,7 +142,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="tel"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -162,7 +162,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="date"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   />
                 </div>
                 <div>
@@ -171,13 +171,13 @@ const Contact = () => {
                   </label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     placeholder="Tell us about your concerns or questions"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-pink-500 text-white py-4 rounded-lg font-semibold hover:bg-pink-600 transition-colors shadow-lg"
+                  className="w-full bg-green-500 text-white py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-lg"
                 >
                   Book Appointment
                 </button>

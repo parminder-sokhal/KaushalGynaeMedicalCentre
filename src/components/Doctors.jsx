@@ -39,7 +39,7 @@ const Doctors = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Meet Our Expert Doctors
           </h2>
-          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our highly qualified and experienced medical professionals are
             dedicated to providing exceptional care
@@ -50,7 +50,7 @@ const Doctors = () => {
           {doctors.map((doctor, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-pink-50 to-blue-50 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow"
+              className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow"
             >
               <div className="relative h-80">
                 <img
@@ -72,7 +72,7 @@ const Doctors = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {doctor.name}
                 </h3>
-                <div className="flex items-center gap-2 text-pink-500 mb-4">
+                <div className="flex items-center gap-2 text-green-500 mb-4">
                   <GraduationCap size={20} />
                   <span className="font-semibold">{doctor.qualification}</span>
                 </div>
@@ -90,7 +90,7 @@ const Doctors = () => {
                   <ul className="space-y-2">
                     {doctor.expertise.map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-pink-500 mt-1">•</span>
+                        <span className="text-green-500 mt-1">•</span>
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}

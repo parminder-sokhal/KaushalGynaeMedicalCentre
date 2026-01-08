@@ -47,7 +47,7 @@ const Testimonials = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             What Our Patients Say
           </h2>
-          <div className="w-24 h-1 bg-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Read testimonials from our satisfied patients who have experienced
             our compassionate care
@@ -58,9 +58,9 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-pink-50 to-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow relative"
+              className="bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow relative"
             >
-              <div className="absolute top-4 right-4 text-pink-200">
+              <div className="absolute top-4 right-4 text-green-200">
                 <Quote size={48} />
               </div>
               <div className="flex gap-1 mb-4">
@@ -75,7 +75,7 @@ const Testimonials = () => {
               <p className="text-gray-700 mb-6 leading-relaxed">
                 {testimonial.text}
               </p>
-              <div className="border-t border-pink-200 pt-4">
+              <div className="border-t border-green-200 pt-4">
                 <p className="font-bold text-gray-900">{testimonial.name}</p>
                 <p className="text-sm text-gray-600">{testimonial.location}</p>
               </div>
@@ -83,7 +83,7 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-pink-500 to-blue-600 rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl p-8 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">
             Join Thousands of Satisfied Patients
           </h3>

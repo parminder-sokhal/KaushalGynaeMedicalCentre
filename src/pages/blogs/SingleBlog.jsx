@@ -31,7 +31,7 @@ const SingleBlog = () => {
 
       {/* TITLE */}
       <header className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-pink-900">
+        <h1 className="text-3xl sm:text-4xl font-bold text-green-900">
           {blog.title}
         </h1>
         <p className="text-gray-700 font-semibold text-xl mt-2">
@@ -44,7 +44,7 @@ const SingleBlog = () => {
         <article
           className="
             prose 
-            prose-pink 
+            prose-green 
             max-w-none
             prose-img:max-w-full
             prose-img:h-auto

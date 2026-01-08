@@ -13,8 +13,8 @@ const Footer = () => {
               Providing world-class gynaecological care since 2013 with advanced
               technology and compassionate service.
             </p>
-            <div className="flex items-center gap-2 text-pink-400">
-              <Heart size={20} className="fill-pink-400" />
+            <div className="flex items-center gap-2 text-green-400">
+              <Heart size={20} className="fill-green-400" />
               <span className="font-semibold">Your Health, Our Priority</span>
             </div>
           </div>
@@ -25,7 +25,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#home"
-                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Home
                 </a>
@@ -33,7 +33,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#about"
-                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   About Us
                 </a>
@@ -41,7 +41,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Services
                 </a>
@@ -49,7 +49,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#doctors"
-                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Our Doctors
                 </a>
@@ -57,7 +57,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contact"
-                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Contact
                 </a>
@@ -82,15 +82,14 @@ const Footer = () => {
               <li className="flex items-start gap-2 text-gray-400">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />
                 <span>
-                  SCF 14 , PEERMUCHALA, PEER MUCHALLA, ZIRAKPUR, Punjab 
-                  160104
+                  SCF 14 , PEERMUCHALA, PEER MUCHALLA, ZIRAKPUR, Punjab 160104
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={20} />
                 <a
                   href="tel:9316194659"
-                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   +91 9316194659
                 </a>
@@ -99,7 +98,7 @@ const Footer = () => {
                 <Mail size={20} />
                 <a
                   href="mailto:drkaushalruchita@gmail.com"
-                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   drkaushalruchita@gmail.com
                 </a>

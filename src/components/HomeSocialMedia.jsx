@@ -81,7 +81,7 @@ const HomeSocialMedia = () => {
         {homeInsta.length > 0 && (
           <div>
             <div className="flex items-center justify-center gap-3 mb-10">
-              <FaInstagram className="text-pink-500 text-4xl" />
+              <FaInstagram className="text-green-500 text-4xl" />
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
                 Instagram Highlights
               </h2>

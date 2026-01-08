@@ -30,6 +30,8 @@ import NormalDelivery2 from "./pages/services/NormalDelivery2";
 import LaparoscopicSurgery from "./pages/services/LaparoscopicSurgery";
 import Csectiondelivery from "./pages/services/CSectionDelivery";
 import Mtpcenter from "./pages/services/MtpCenter";
+import PainClinic from "./pages/services/PainClinic";
+import CriticalCareHDU from "./pages/services/CriticalCareHDU";
 
 /* --- Treatment Pages --- */
 import HelpsManageHormonalAndEmotionalChanges from "./pages/treatements/HelpsManageHormonalAndEmotionalChanges";
@@ -104,7 +106,10 @@ function AppContent() {
             path="/services/c-section-delivery"
             element={<Csectiondelivery />}
           />
+          
           <Route path="/services/mtp-center" element={<Mtpcenter />} />
+          <Route path="/services/CriticalCareHDU" element={<CriticalCareHDU />} />
+          <Route path="/services/Pain-clinic" element={<PainClinic />} />
           {/* --- Treatments --- */}
           <Route
             path="/treatments/helps-manage-hormonal-and-emotional-changes"
